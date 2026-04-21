@@ -1,11 +1,14 @@
-name: My First Workflow
+name: Debug CI
 
-on: [push]
+on: push
 
 jobs:
   hello:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Say Hello
-        run: echo "Hello GitHub Actions!"
+      - name: Start
+        run: echo "Start"
+
+      - name: Break step
+        run: wrong_command_here   
